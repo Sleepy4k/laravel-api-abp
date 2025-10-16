@@ -16,10 +16,7 @@ return [
     */
 
     'paths' => [
-        'access-denied',
-        'login',
-        'logout',
-        'dashboard/*',
+        'core/*',
         'sanctum/csrf-cookie'
     ],
 
