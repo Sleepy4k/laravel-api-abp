@@ -50,7 +50,10 @@ return Application::configure(basePath: dirname(__DIR__))
                 $exception instanceof \Symfony\Component\HttpKernel\Exception\HttpException =>
                     ApiResponse::error($exception->getMessage() ?: 'HTTP Error', $exception->getStatusCode()),
 
-                default => ApiResponse::error('An error occurred', 500),
+                default => ApiResponse::error('An error occurred', 500, config('app.debug') ? [
+                    'message' => $exception->getMessage(),
+                    'trace' => $exception->getTrace(),
+                ] : null),
             };
         });
     })->create();
