@@ -23,7 +23,9 @@ class MovieFactory extends Factory
                 'description' => 'Keluarga Rini kembali dihantui teror setelah pindah ke rumah susun yang terpencil.',
                 'release_year' => 2022,
                 'genre' => 'Horor',
-                'director' => 'Joko Anwar'
+                'director' => 'Joko Anwar',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -31,7 +33,9 @@ class MovieFactory extends Factory
                 'description' => 'Kisah keluarga miskin yang menyusup ke kehidupan keluarga kaya raya, mengungkap ketidaksetaraan sosial.',
                 'release_year' => 2019,
                 'genre' => 'Thriller, Komedi Hitam',
-                'director' => 'Bong Joon-ho'
+                'director' => 'Bong Joon-ho',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -39,7 +43,9 @@ class MovieFactory extends Factory
                 'description' => 'Para pahlawan yang tersisa berusaha membalikkan kehancuran yang ditimbulkan oleh Thanos.',
                 'release_year' => 2019,
                 'genre' => 'Aksi, Fiksi Ilmiah',
-                'director' => 'Anthony Russo, Joe Russo'
+                'director' => 'Anthony Russo, Joe Russo',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -47,7 +53,9 @@ class MovieFactory extends Factory
                 'description' => 'Kisah romansa SMA antara Dilan, anggota geng motor yang pintar, dan Milea.',
                 'release_year' => 2018,
                 'genre' => 'Romantis, Drama',
-                'director' => 'Fajar Bustomi'
+                'director' => 'Fajar Bustomi',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -55,7 +63,9 @@ class MovieFactory extends Factory
                 'description' => 'Seorang pencuri yang ahli dalam seni ekstraksi mimpi ditugaskan untuk misi yang mustahil: inception.',
                 'release_year' => 2010,
                 'genre' => 'Fiksi Ilmiah, Aksi',
-                'director' => 'Christopher Nolan'
+                'director' => 'Christopher Nolan',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -63,7 +73,9 @@ class MovieFactory extends Factory
                 'description' => 'Saga epik tentang keluarga kriminal Italia-Amerika yang dipimpin oleh Vito Corleone.',
                 'release_year' => 1972,
                 'genre' => 'Kriminal, Drama',
-                'director' => 'Francis Ford Coppola'
+                'director' => 'Francis Ford Coppola',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -71,7 +83,9 @@ class MovieFactory extends Factory
                 'description' => 'Pria dengan disabilitas mental dipenjara secara tidak adil dan berteman dengan tahanan lain.',
                 'release_year' => 2013,
                 'genre' => 'Komedi, Melodrama',
-                'director' => 'Lee Hwan-kyung'
+                'director' => 'Lee Hwan-kyung',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -79,7 +93,9 @@ class MovieFactory extends Factory
                 'description' => 'Kisah persahabatan empat sahabat karib yang tumbuh besar bersama di pinggiran kota.',
                 'release_year' => 2004,
                 'genre' => 'Drama',
-                'director' => 'Riri Riza'
+                'director' => 'Riri Riza',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -87,7 +103,9 @@ class MovieFactory extends Factory
                 'description' => 'Jalinan kisah dari berbagai karakter di dunia kriminal Los Angeles.',
                 'release_year' => 1994,
                 'genre' => 'Kriminal, Neo-Noir',
-                'director' => 'Quentin Tarantino'
+                'director' => 'Quentin Tarantino',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -95,7 +113,9 @@ class MovieFactory extends Factory
                 'description' => 'Peter Parker meminta bantuan Doctor Strange untuk menghapus ingatannya sebagai Spider-Man, namun malah membuka portal multiverse.',
                 'release_year' => 2021,
                 'genre' => 'Aksi, Pahlawan Super',
-                'director' => 'Jon Watts'
+                'director' => 'Jon Watts',
+                'created_at' => now(),
+                'updated_at' => now()
             ]
         ];
     }

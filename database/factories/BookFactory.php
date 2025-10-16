@@ -23,7 +23,9 @@ class BookFactory extends Factory
                 'author' => 'Andrea Hirata',
                 'published_year' => 2005,
                 'genre' => 'Fiksi/Pendidikan',
-                'isbn' => '978-9791227005'
+                'isbn' => '978-9791227005',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -31,7 +33,9 @@ class BookFactory extends Factory
                 'author' => 'Henry Manampiring',
                 'published_year' => 2018,
                 'genre' => 'Pengembangan Diri',
-                'isbn' => '978-6020619022'
+                'isbn' => '978-6020619022',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -39,7 +43,9 @@ class BookFactory extends Factory
                 'author' => 'Pramoedya Ananta Toer',
                 'published_year' => 1980,
                 'genre' => 'Fiksi Sejarah',
-                'isbn' => '978-9799276222'
+                'isbn' => '978-9799276222',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -47,7 +53,9 @@ class BookFactory extends Factory
                 'author' => 'J.R.R. Tolkien',
                 'published_year' => 1954,
                 'genre' => 'Fantasi',
-                'isbn' => '978-0618260233'
+                'isbn' => '978-0618260233',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -55,7 +63,9 @@ class BookFactory extends Factory
                 'author' => 'James Clear',
                 'published_year' => 2018,
                 'genre' => 'Produktivitas',
-                'isbn' => '978-0735211292'
+                'isbn' => '978-0735211292',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -63,7 +73,9 @@ class BookFactory extends Factory
                 'author' => 'George Orwell',
                 'published_year' => 1949,
                 'genre' => 'Distopia',
-                'isbn' => '978-0451524935'
+                'isbn' => '978-0451524935',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -71,7 +83,9 @@ class BookFactory extends Factory
                 'author' => 'Mochtar Lubis',
                 'published_year' => 1963,
                 'genre' => 'Fiksi Sosial',
-                'isbn' => '978-9799100060'
+                'isbn' => '978-9799100060',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -79,7 +93,9 @@ class BookFactory extends Factory
                 'author' => 'R. H. Sianipar',
                 'published_year' => 2022,
                 'genre' => 'Non-Fiksi/Teknologi',
-                'isbn' => '978-6230912345'
+                'isbn' => '978-6230912345',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -87,7 +103,9 @@ class BookFactory extends Factory
                 'author' => 'Arthur Conan Doyle',
                 'published_year' => 1887,
                 'genre' => 'Misteri',
-                'isbn' => '978-0140439088'
+                'isbn' => '978-0140439088',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -95,7 +113,9 @@ class BookFactory extends Factory
                 'author' => 'Leila S. Chudori',
                 'published_year' => 2017,
                 'genre' => 'Fiksi Sejarah',
-                'isbn' => '978-9799106949'
+                'isbn' => '978-9799106949',
+                'created_at' => now(),
+                'updated_at' => now()
             ]
         ];
     }

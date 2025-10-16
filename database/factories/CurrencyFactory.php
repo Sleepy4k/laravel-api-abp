@@ -21,61 +21,81 @@ class CurrencyFactory extends Factory
                 'id' => \Illuminate\Support\Str::uuid(),
                 'name' => 'United States Dollar',
                 'code' => 'USD',
-                'symbol' => '$'
+                'symbol' => '$',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
                 'name' => 'Euro',
                 'code' => 'EUR',
-                'symbol' => '€'
+                'symbol' => '€',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
                 'name' => 'Japanese Yen',
                 'code' => 'JPY',
-                'symbol' => '¥'
+                'symbol' => '¥',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
                 'name' => 'British Pound Sterling',
                 'code' => 'GBP',
-                'symbol' => '£'
+                'symbol' => '£',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
                 'name' => 'Australian Dollar',
                 'code' => 'AUD',
-                'symbol' => 'A$'
+                'symbol' => 'A$',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
                 'name' => 'Canadian Dollar',
                 'code' => 'CAD',
-                'symbol' => 'C$'
+                'symbol' => 'C$',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
                 'name' => 'Swiss Franc',
                 'code' => 'CHF',
-                'symbol' => 'CHF'
+                'symbol' => 'CHF',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
                 'name' => 'Chinese Yuan Renminbi',
                 'code' => 'CNY',
-                'symbol' => '¥'
+                'symbol' => '¥',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
                 'name' => 'Singapore Dollar',
                 'code' => 'SGD',
-                'symbol' => 'S$'
+                'symbol' => 'S$',
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
                 'name' => 'Indonesian Rupiah',
                 'code' => 'IDR',
-                'symbol' => 'Rp'
+                'symbol' => 'Rp',
+                'created_at' => now(),
+                'updated_at' => now()
             ]
         ];
     }

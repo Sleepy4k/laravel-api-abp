@@ -23,7 +23,9 @@ class BikeFactory extends Factory
                 'type' => 'Matic (Skutik)',
                 'color' => 'Merah Doff',
                 'price' => 18500000,
-                'availability' => true
+                'availability' => true,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -31,7 +33,9 @@ class BikeFactory extends Factory
                 'type' => 'Sport Fairing',
                 'color' => 'Hitam Glossy',
                 'price' => 35800000,
-                'availability' => true
+                'availability' => true,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -39,7 +43,9 @@ class BikeFactory extends Factory
                 'type' => 'Naked Bike',
                 'color' => 'Hijau Lime',
                 'price' => 58900000,
-                'availability' => false
+                'availability' => false,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -47,7 +53,9 @@ class BikeFactory extends Factory
                 'type' => 'Bebek',
                 'color' => 'Biru Metallic',
                 'price' => 15250000,
-                'availability' => true
+                'availability' => true,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -55,7 +63,9 @@ class BikeFactory extends Factory
                 'type' => 'Skuter Klasik',
                 'color' => 'Kuning Lemon',
                 'price' => 42000000,
-                'availability' => true
+                'availability' => true,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -63,7 +73,9 @@ class BikeFactory extends Factory
                 'type' => 'Touring',
                 'color' => 'Abu-abu Titanium',
                 'price' => 650000000,
-                'availability' => false
+                'availability' => false,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -71,7 +83,9 @@ class BikeFactory extends Factory
                 'type' => 'Cruiser',
                 'color' => 'Coklat Vintage',
                 'price' => 850000000,
-                'availability' => false
+                'availability' => false,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -79,7 +93,9 @@ class BikeFactory extends Factory
                 'type' => 'Matic (Skutik)',
                 'color' => 'Putih Mutiara',
                 'price' => 21750000,
-                'availability' => true
+                'availability' => true,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -87,7 +103,9 @@ class BikeFactory extends Factory
                 'type' => 'Trail/Adventure',
                 'color' => 'Biru Tua',
                 'price' => 38000000,
-                'availability' => true
+                'availability' => true,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -95,7 +113,9 @@ class BikeFactory extends Factory
                 'type' => 'Supermoto',
                 'color' => 'Oranye',
                 'price' => 115000000,
-                'availability' => true
+                'availability' => true,
+                'created_at' => now(),
+                'updated_at' => now()
             ]
         ];
     }

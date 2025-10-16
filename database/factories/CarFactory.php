@@ -25,7 +25,9 @@ class CarFactory extends Factory
                 'fuel_type' => 'Diesel',
                 'color' => 'Putih',
                 'price' => 385000000,
-                'availability' => true
+                'availability' => true,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -35,7 +37,9 @@ class CarFactory extends Factory
                 'fuel_type' => 'Bensin',
                 'color' => 'Merah',
                 'price' => 610000000,
-                'availability' => true
+                'availability' => true,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -45,7 +49,9 @@ class CarFactory extends Factory
                 'fuel_type' => 'Bensin',
                 'color' => 'Hitam',
                 'price' => 255000000,
-                'availability' => true
+                'availability' => true,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -55,7 +61,9 @@ class CarFactory extends Factory
                 'fuel_type' => 'Bensin',
                 'color' => 'Hijau Army',
                 'price' => 450000000,
-                'availability' => false
+                'availability' => false,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -65,7 +73,9 @@ class CarFactory extends Factory
                 'fuel_type' => 'Listrik',
                 'color' => 'Abu-abu Metalik',
                 'price' => 780000000,
-                'availability' => true
+                'availability' => true,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -75,7 +85,9 @@ class CarFactory extends Factory
                 'fuel_type' => 'Bensin',
                 'color' => 'Biru Tua',
                 'price' => 1200000000,
-                'availability' => false
+                'availability' => false,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -85,7 +97,9 @@ class CarFactory extends Factory
                 'fuel_type' => 'Bensin',
                 'color' => 'Kuning',
                 'price' => 175000000,
-                'availability' => true
+                'availability' => true,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -95,7 +109,9 @@ class CarFactory extends Factory
                 'fuel_type' => 'Listrik',
                 'color' => 'Pink Pastel',
                 'price' => 220000000,
-                'availability' => true
+                'availability' => true,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -105,7 +121,9 @@ class CarFactory extends Factory
                 'fuel_type' => 'Bensin',
                 'color' => 'Hitam Solid',
                 'price' => 950000000,
-                'availability' => true
+                'availability' => true,
+                'created_at' => now(),
+                'updated_at' => now()
             ],
             [
                 'id' => \Illuminate\Support\Str::uuid(),
@@ -115,7 +133,9 @@ class CarFactory extends Factory
                 'fuel_type' => 'Diesel',
                 'color' => 'Coklat',
                 'price' => 95000000,
-                'availability' => false
+                'availability' => false,
+                'created_at' => now(),
+                'updated_at' => now()
             ]
         ];
     }
