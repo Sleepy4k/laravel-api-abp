@@ -16,5 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::any('/', RootController::class);
 
 Route::prefix('core')->group(function () {
-
+    
 });
