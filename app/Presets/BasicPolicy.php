@@ -22,9 +22,6 @@ class BasicPolicy implements Preset
             ->add([Directive::FORM_ACTION, Directive::MEDIA, Directive::FRAME], Keyword::NONE)
             ->add([Directive::MANIFEST, Directive::CHILD, Directive::CONNECT], Keyword::NONE)
             ->add([Directive::WORKER, Directive::OBJECT, Directive::WEB_RTC], Keyword::NONE)
-            ->add([Directive::SCRIPT, Directive::STYLE, Directive::FONT], Keyword::NONE)
-            ->add([Directive::SCRIPT_ELEM, Directive::STYLE_ELEM], Keyword::NONE)
-            ->add([Directive::SCRIPT_ATTR, Directive::STYLE_ATTR], Keyword::NONE)
             ->add([Directive::BLOCK_ALL_MIXED_CONTENT], Value::NO_VALUE);
 
         if (app()->environment(['production', 'staging'])) {
