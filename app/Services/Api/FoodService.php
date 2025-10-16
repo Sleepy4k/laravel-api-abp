@@ -56,7 +56,7 @@ class FoodService extends Service
     {
         $food = $food->delete();
         if ($food) {
-            return ApiResponse::success('Food deleted successfully');
+            return ApiResponse::success(null, 'Food deleted successfully');
         }
         return ApiResponse::error('Failed to delete food', 500);
     }

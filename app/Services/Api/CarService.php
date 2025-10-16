@@ -14,7 +14,7 @@ class CarService extends Service
     public function index(): mixed
     {
         $cars = Car::all();
-        return ApiResponse::success('Cars retrieved successfully', $cars);
+        return ApiResponse::success($cars, 'Cars retrieved successfully');
     }
 
     /**
@@ -24,7 +24,7 @@ class CarService extends Service
     {
         $car = Car::create($request);
         if ($car) {
-            return ApiResponse::success('Car created successfully', $car, 201);
+            return ApiResponse::success($car, 'Car created successfully', 201);
         }
         return ApiResponse::error('Failed to create car', 500);
     }
@@ -34,7 +34,7 @@ class CarService extends Service
      */
     public function show(Car $car): mixed
     {
-        return ApiResponse::success('Car retrieved successfully', $car);
+        return ApiResponse::success($car, 'Car retrieved successfully');
     }
 
     /**
@@ -44,7 +44,7 @@ class CarService extends Service
     {
         $car = $car->update($request);
         if ($car) {
-            return ApiResponse::success('Car updated successfully', $car);
+            return ApiResponse::success($car, 'Car updated successfully');
         }
         return ApiResponse::error('Failed to update car', 500);
     }
@@ -56,7 +56,7 @@ class CarService extends Service
     {
         $car = $car->delete();
         if ($car) {
-            return ApiResponse::success('Car deleted successfully');
+            return ApiResponse::success(null, 'Car deleted successfully');
         }
         return ApiResponse::error('Failed to delete car', 500);
     }
