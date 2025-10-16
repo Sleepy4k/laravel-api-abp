@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Api\RootController;
+use App\Http\Controllers\Api;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +13,17 @@ use Illuminate\Support\Facades\Route;
 | Remember not to list anything of importance, use authenticate route instead.
 */
 
-Route::any('/', RootController::class);
+Route::any('/', Api\RootController::class);
 
 Route::prefix('core')->group(function () {
-
+    Route::apiResources([
+        'bikes' => Api\BikeController::class,
+        'books' => Api\BookController::class,
+        'cars' => Api\CarController::class,
+        'companies' => Api\CompanyController::class,
+        'currencies' => Api\CurrencyController::class,
+        'drinks' => Api\DrinkController::class,
+        'foods' => Api\FoodController::class,
+        'movies' => Api\MovieController::class,
+    ]);
 });
