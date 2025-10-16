@@ -3,11 +3,9 @@
 namespace App\Providers;
 
 use App\Facades\ApiResponse;
-use App\Models\Role;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
 class RouteServiceProvider extends ServiceProvider
@@ -28,12 +26,6 @@ class RouteServiceProvider extends ServiceProvider
         if (app()->runningInConsole()) {
             return;
         }
-
-        $roles = Role::query()->pluck('name')->toArray();
-        $highestRole = config('rbac.role.highest');
-        Route::pattern('role', implode('|', array_filter($roles, fn ($role) => $role !== $highestRole)));
-
-        Route::pattern('business', '[a-z0-9-]+');
 
         RateLimiter::for('api', function ($request) {
             $identifier = auth('api')->check() ? auth('api')->id() : $request->ip();
