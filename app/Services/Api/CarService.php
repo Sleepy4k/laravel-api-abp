@@ -2,47 +2,62 @@
 
 namespace App\Services\Api;
 
+use App\Facades\ApiResponse;
 use App\Foundations\Service;
+use App\Models\Car;
 
 class CarService extends Service
 {
     /**
      * Display a listing of the resource.
      */
-    public function index(): array
+    public function index(): mixed
     {
-        return [];
+        $cars = Car::all();
+        return ApiResponse::success('Cars retrieved successfully', $cars);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(array $request): bool
+    public function store(array $request): mixed
     {
-        return false;
+        $car = Car::create($request);
+        if ($car) {
+            return ApiResponse::success('Car created successfully', $car, 201);
+        }
+        return ApiResponse::error('Failed to create car', 500);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(int $id): array
+    public function show(Car $car): mixed
     {
-        return [];
+        return ApiResponse::success('Car retrieved successfully', $car);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(array $request, int $id): bool
+    public function update(array $request, Car $car): mixed
     {
-        return false;
+        $car = $car->update($request);
+        if ($car) {
+            return ApiResponse::success('Car updated successfully', $car);
+        }
+        return ApiResponse::error('Failed to update car', 500);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(int $id): bool
+    public function destroy(Car $car): mixed
     {
-        return false;
+        $car = $car->delete();
+        if ($car) {
+            return ApiResponse::success('Car deleted successfully');
+        }
+        return ApiResponse::error('Failed to delete car', 500);
     }
 }

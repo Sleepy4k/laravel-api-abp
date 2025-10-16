@@ -43,8 +43,8 @@ class Company extends Model
             'address' => 'string',
             'email' => 'string',
             'phone' => 'string',
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
+            'created_at' => 'datetime:l, d F Y',
+            'updated_at' => 'datetime:l, d F Y',
         ];
     }
 

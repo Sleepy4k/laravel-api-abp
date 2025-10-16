@@ -42,8 +42,8 @@ class Food extends Model
             'name' => 'string',
             'description' => 'string',
             'price' => 'integer',
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
+            'created_at' => 'datetime:l, d F Y',
+            'updated_at' => 'datetime:l, d F Y',
         ];
     }
 

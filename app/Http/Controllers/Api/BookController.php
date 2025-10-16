@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Facades\ApiResponse;
 use App\Foundations\Controller;
 use App\Http\Requests\Book\StoreRequest;
 use App\Http\Requests\Book\UpdateRequest;
@@ -20,7 +21,11 @@ class BookController extends Controller
      */
     public function index()
     {
-        //
+        try {
+            return $this->service->index();
+        } catch (\Throwable $th) {
+            return ApiResponse::error('Failed to retrieve books', 500, $th->getMessage());
+        }
     }
 
     /**
@@ -28,7 +33,11 @@ class BookController extends Controller
      */
     public function store(StoreRequest $request)
     {
-        //
+        try {
+            return $this->service->store($request->validated());
+        } catch (\Throwable $th) {
+            return ApiResponse::error('Failed to create book', 500, $th->getMessage());
+        }
     }
 
     /**
@@ -36,7 +45,11 @@ class BookController extends Controller
      */
     public function show(Book $book)
     {
-        //
+        try {
+            return $this->service->show($book);
+        } catch (\Throwable $th) {
+            return ApiResponse::error('Failed to retrieve book', 500, $th->getMessage());
+        }
     }
 
     /**
@@ -44,7 +57,11 @@ class BookController extends Controller
      */
     public function update(UpdateRequest $request, Book $book)
     {
-        //
+        try {
+            return $this->service->update($request->validated(), $book);
+        } catch (\Throwable $th) {
+            return ApiResponse::error('Failed to update book', 500, $th->getMessage());
+        }
     }
 
     /**
@@ -52,6 +69,10 @@ class BookController extends Controller
      */
     public function destroy(Book $book)
     {
-        //
+        try {
+            return $this->service->destroy($book);
+        } catch (\Throwable $th) {
+            return ApiResponse::error('Failed to delete book', 500, $th->getMessage());
+        }
     }
 }

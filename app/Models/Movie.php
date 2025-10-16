@@ -45,8 +45,8 @@ class Movie extends Model
             'release_year' => 'integer',
             'genre' => 'string',
             'director' => 'string',
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
+            'created_at' => 'datetime:l, d F Y',
+            'updated_at' => 'datetime:l, d F Y',
         ];
     }
 

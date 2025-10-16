@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Facades\ApiResponse;
 use App\Foundations\Controller;
 use App\Http\Requests\Bike\StoreRequest;
 use App\Http\Requests\Bike\UpdateRequest;
@@ -20,7 +21,11 @@ class BikeController extends Controller
      */
     public function index()
     {
-        //
+        try {
+            return $this->service->index();
+        } catch (\Throwable $th) {
+            return ApiResponse::error('Failed to retrieve bikes', 500, $th->getMessage());
+        }
     }
 
     /**
@@ -28,7 +33,11 @@ class BikeController extends Controller
      */
     public function store(StoreRequest $request)
     {
-        //
+        try {
+            return $this->service->store($request->validated());
+        } catch (\Throwable $th) {
+            return ApiResponse::error('Failed to create bike', 500, $th->getMessage());
+        }
     }
 
     /**
@@ -36,7 +45,11 @@ class BikeController extends Controller
      */
     public function show(Bike $bike)
     {
-        //
+        try {
+            return $this->service->show($bike);
+        } catch (\Throwable $th) {
+            return ApiResponse::error('Failed to retrieve bike', 500, $th->getMessage());
+        }
     }
 
     /**
@@ -44,7 +57,11 @@ class BikeController extends Controller
      */
     public function update(UpdateRequest $request, Bike $bike)
     {
-        //
+        try {
+            return $this->service->update($request->validated(), $bike);
+        } catch (\Throwable $th) {
+            return ApiResponse::error('Failed to update bike', 500, $th->getMessage());
+        }
     }
 
     /**
@@ -52,6 +69,10 @@ class BikeController extends Controller
      */
     public function destroy(Bike $bike)
     {
-        //
+        try {
+            return $this->service->destroy($bike);
+        } catch (\Throwable $th) {
+            return ApiResponse::error('Failed to delete bike', 500, $th->getMessage());
+        }
     }
 }

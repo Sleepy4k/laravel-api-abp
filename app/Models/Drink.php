@@ -41,10 +41,10 @@ class Drink extends Model
             'id' => 'string',
             'name' => 'string',
             'description' => 'string',
-            'price' => 'decimal:2',
-            'rating' => 'integer',
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
+            'price' => 'integer',
+            'rating' => 'decimal:2',
+            'created_at' => 'datetime:l, d F Y',
+            'updated_at' => 'datetime:l, d F Y',
         ];
     }
 
