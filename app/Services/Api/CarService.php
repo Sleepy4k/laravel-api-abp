@@ -56,7 +56,7 @@ class CarService extends Service
     {
         $car = $car->delete();
         if ($car) {
-            return ApiResponse::success(null, 'Car deleted successfully');
+            return ApiResponse::success(null, 'Car deleted successfully', 204);
         }
         return ApiResponse::error('Failed to delete car', 500);
     }
